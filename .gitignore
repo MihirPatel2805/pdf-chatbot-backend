@@ -4,8 +4,11 @@ __pycache__/
 *$py.class
 
 # Python venv
+myenv/
 .venv/
 
+# uploads
+uploads/
 # C extensions
 *.so
 

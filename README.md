@@ -2,10 +2,10 @@
 
 Setup
 
-- Create venv: `py -3 -m venv .venv`
+- Create venv: `python -m venv myenv`
 - Activate venv: `.venv\Scripts\activate` (PowerShell: `.venv\Scripts\Activate.ps1`)
 - Install deps: `pip install -r requirements.txt`
-- Run server: `python -m uvicorn app.main:app --reload`
+- Run server: `uvicorn app.main:app --reload`
 
 Features
 
@@ -35,3 +35,17 @@ Notes
 
 - Use `--reload` only for development
 - Pin extra dependencies you adopt in `requirements.txt`
+
+## Required Configuration
+
+Before using the PDF upload functionality, you need to set up:
+
+### 1. Google Gemini API Key
+
+```bash
+# Set environment variable
+export GOOGLE_API_KEY=your_google_api_key_here
+
+# Or create a .env file in project root
+GOOGLE_API_KEY=your_google_api_key_here
+```
