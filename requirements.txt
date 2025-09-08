@@ -1,9 +1,50 @@
+# Core Framework
 fastapi==0.116.1
-uvicorn==0.35.0
+uvicorn[standard]==0.35.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# LangChain and AI
+langchain==0.1.0
 langchain-text-splitters==0.3.11
-langchain-pinecone==0.2.12
+langchain-qdrant==0.1.0
 langchain-google-genai==2.1.10
-pypdf2==3.0.1
+langchain-community==0.0.10
+langchain-core==0.1.0
+
+# Vector Database
+qdrant-client==1.7.0
+
+# PDF Processing
+PyPDF2==3.0.1
+
+# HTTP and File Handling
 python-multipart==0.0.20
+httpx==0.25.2
+requests==2.31.0
+
+# Configuration and Environment
 python-dotenv==1.0.0
+
+# Logging and Monitoring
+structlog==23.2.0
+
+# Authentication and Security
+clerk-sdk-python==0.1.0
+PyJWT[crypto]==2.8.0
+cryptography==41.0.7
+python-multipart==0.0.20
+
+# Database
+SQLAlchemy==2.0.32
+psycopg2-binary==2.9.9
+psycopg2==2.9.10
+python-jose==3.3.0
+
+# Development and Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
 
